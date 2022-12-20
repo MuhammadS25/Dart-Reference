@@ -79,4 +79,18 @@ void main() {
       ifAbsent: () => 'Ahmed'); // update a value if the key exists
   print(myData);
   myData.clear(); // remove all keys and values
+
+  // sets
+  Set<String> mySet = {'Mo', 'Ahmed', 'Ali'};
+  print(mySet);
+  mySet.add('Ali'); // add a value
+  print(mySet);
+  mySet.remove('Ahmed'); // remove a value
+  print(mySet);
+  mySet.forEach((name) => print(name)); // loop through the set
+  print(mySet.contains('Mo')); // check if the set contains a value
+  print(mySet.length); // get the length of the set
+  print(mySet.isEmpty); // check if the set is empty
+  print(mySet.isNotEmpty); // check if the set is not empty
+  mySet.clear(); // remove all elements
 }
