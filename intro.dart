@@ -4,6 +4,17 @@ void main() {
   double pi = 3.14; // fractional numbers
   //print pi with 3 decimal places
   print(pi.toStringAsFixed(3));
+  //print pi with 3 decimal places and 2 leading zeros
+  print('${pi.toString().padLeft(6, '0')}');
+  //print pi with 2 trailing zeros
+  print(pi.toString().padRight(6, '0'));
+  //print pi with 2 leading and 2 trailing zeros
+  print(pi
+      .toString()
+      .padLeft(6, '0')
+      .padRight(8, '0')); //arguments are (desired length, character)
+  //divide age by pi with integer division
+  print(age ~/ pi);
 
   // strings
   String name = 'Mo';
@@ -112,7 +123,7 @@ void main() {
   //myVar2 = 20; can't change the type once assigned
   print(myVar2);
 
-  // final --> run time constant(in case of receiving data from db or api)
+  // final --> run time constant(in case of receiving data from db or api or user input)
   final myVar3 = 'Mo';
   print(myVar3);
   //myVar3 = 20; can't change the value
