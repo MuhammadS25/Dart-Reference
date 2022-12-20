@@ -55,4 +55,28 @@ void main() {
   names.join(', '); // join the list values with a comma and space
   print(names);
   names.clear(); // remove all elements
+
+  // maps
+  Map<String, String> myData = {
+    'name': 'Mo',
+    'age': '20',
+    'job': 'developer',
+    'phone': '01554270415'
+  };
+  print(myData);
+  print(myData['name']); // get the value of a key
+  myData['name'] = 'Mohamed'; // set the value of a key
+  myData['address'] = 'Cairo'; // add a new key and value
+  myData.remove('address'); // remove a key and value
+  print(myData);
+  print(myData.keys); // get all keys
+  print(myData.values); // get all values
+  print(myData.entries); // get all keys and values
+  myData.forEach((key, value) => print('$key: $value')); // loop through the map
+  myData.update('name', (value) => 'Mo'); // update a value
+  print(myData);
+  myData.update('name', (value) => 'Mo',
+      ifAbsent: () => 'Ahmed'); // update a value if the key exists
+  print(myData);
+  myData.clear(); // remove all keys and values
 }
