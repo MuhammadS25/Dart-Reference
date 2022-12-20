@@ -93,4 +93,22 @@ void main() {
   print(mySet.isEmpty); // check if the set is empty
   print(mySet.isNotEmpty); // check if the set is not empty
   mySet.clear(); // remove all elements
+
+  // dynamic
+  dynamic myVar = 'Mo';
+  print(myVar);
+  myVar = 20; // can change the type if already assigned
+  print(myVar);
+  myVar = true;
+  print(myVar);
+  myVar = 3.14;
+  print(myVar);
+  myVar = ['Mo', 'Ahmed', 'Ali'];
+  print(myVar);
+
+  // var
+  var myVar2 = 'Mo';
+  print(myVar2);
+  //myVar2 = 20; can't change the type once assigned
+  print(myVar2);
 }
