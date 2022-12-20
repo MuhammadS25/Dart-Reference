@@ -11,4 +11,9 @@ void main() {
   // string interpolation using curly braces
   print(
       'Hello ${name.toUpperCase()}'); //accessing methods inside strings quotes
+
+  // booleans
+  bool isTrue = true; //true not 1
+  isTrue = pi == 3.14; // true
+  isTrue = pi == 3.14 ? true : false; // ternary operator
 }
