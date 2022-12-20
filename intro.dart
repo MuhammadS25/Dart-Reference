@@ -111,4 +111,14 @@ void main() {
   print(myVar2);
   //myVar2 = 20; can't change the type once assigned
   print(myVar2);
+
+  // final --> run time constant(in case of receiving data from db or api)
+  final myVar3 = 'Mo';
+  print(myVar3);
+  //myVar3 = 20; can't change the value
+
+  // const --> compile time constant(better performance than final when the value is known at compile time)
+  const myVar4 = 'Mo';
+  print(myVar4);
+  //myVar4 = 20; can't change the value
 }
