@@ -204,4 +204,11 @@ void main() {
   }
 
   print('----------------------------------');
+
+  reminder();
+}
+
+// functions
+void reminder() {
+  print('There\'s no God but ALLAH');
 }
