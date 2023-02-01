@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // numbers
   print('Numbers ----------------------------------');
@@ -183,8 +185,11 @@ void main() {
 
   // switch case
   print('Switch case ----------------------------------');
-  int playerNum = 5;
-  switch (playerNum) {
+  // get input from user
+  var playerNum = stdin.readLineSync() as String;
+  // convert the input to int
+  int pNum = int.parse(playerNum);
+  switch (pNum) {
     case 1:
       print('Goalkeeper');
       break;
