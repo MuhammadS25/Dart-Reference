@@ -96,7 +96,7 @@ void main() {
   // sets
   Set<String> mySet = {'Mo', 'Ahmed', 'Ali'};
   print(mySet);
-  mySet.add('Ali'); // add a value
+  mySet.add('Aliou'); // add a value
   print(mySet);
   mySet.remove('Ahmed'); // remove a value
   print(mySet);
