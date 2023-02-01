@@ -79,7 +79,7 @@ void main() {
   print(myData['name']); // get the value of a key
   myData['name'] = 'Mohamed'; // set the value of a key
   myData['address'] = 'Cairo'; // add a new key and value
-  myData.remove('address'); // remove a key and value
+  myData.remove('phone'); // remove a key and value
   print(myData);
   print(myData.keys); // get all keys
   print(myData.values); // get all values
@@ -87,8 +87,9 @@ void main() {
   myData.forEach((key, value) => print('$key: $value')); // loop through the map
   myData.update('name', (value) => 'Mo'); // update a value
   print(myData);
-  myData.update('name', (value) => 'Mo',
-      ifAbsent: () => 'Ahmed'); // update a value if the key exists
+  myData.update('name', (value) => 'MO',
+      ifAbsent: () =>
+          'MO'); // update a value if the key exists, otherwise add a new key and value
   print(myData);
   myData.clear(); // remove all keys and values
 
