@@ -1,5 +1,6 @@
 void main() {
   // numbers
+  print('Numbers ----------------------------------');
   int age = 20; // real numbers
   double pi = 3.14; // fractional numbers
   //print pi with 3 decimal places
@@ -15,21 +16,28 @@ void main() {
       .padRight(8, '0')); //arguments are (desired length, character)
   //divide age by pi with integer division
   print(age ~/ pi);
+  print('----------------------------------');
 
   // strings
+  print('Strings ----------------------------------');
   String name = 'Mo';
   print('Hello $name'); //accessing variables inside strings quotes
   // string interpolation using curly braces
   print(
       'Hello ${name.toUpperCase()}'); //accessing methods inside strings quotes
 
+  print('----------------------------------');
+
   // booleans
+  print('Booleans ----------------------------------');
   bool isTrue = true; //true not 1
   isTrue = pi == 3.14; // true
   isTrue = pi == 3.14 ? true : false; // ternary operator
   print(isTrue);
+  print('----------------------------------');
 
   // lists
+  print('Lists ----------------------------------');
   List<String> names = ['Mo', 'Ahmed', 'Ali']; // fixed length
   names.add('Khaled'); // add to the end of the list
   print(names);
@@ -68,7 +76,10 @@ void main() {
   print(joined);
   names.clear(); // remove all elements
 
+  print('----------------------------------');
+
   // maps
+  print('Maps ----------------------------------');
   Map<String, String> myData = {
     'name': 'Mo',
     'age': '20',
@@ -93,10 +104,13 @@ void main() {
   print(myData);
   myData.clear(); // remove all keys and values
 
+  print('----------------------------------');
+
   // sets
+  print('Sets ----------------------------------');
   Set<String> mySet = {'Mo', 'Ahmed', 'Ali'};
   print(mySet);
-  mySet.add('Aliou'); // add a value
+  mySet.add('Aliou'); // add a value if it doesn't exist, otherwise do nothing
   print(mySet);
   mySet.remove('Ahmed'); // remove a value
   print(mySet);
@@ -107,7 +121,10 @@ void main() {
   print(mySet.isNotEmpty); // check if the set is not empty
   mySet.clear(); // remove all elements
 
+  print('----------------------------------');
+
   // dynamic
+  print('Dynamic ----------------------------------');
   dynamic myVar = 'Mo';
   print(myVar);
   myVar = 20; // can change the type if already assigned
@@ -119,19 +136,30 @@ void main() {
   myVar = ['Mo', 'Ahmed', 'Ali'];
   print(myVar);
 
+  print('----------------------------------');
+
   // var
-  var myVar2 = 'Mo';
+  print('Var ----------------------------------');
+  var myVar2 = 'Moo';
   print(myVar2);
   //myVar2 = 20; can't change the type once assigned
   print(myVar2);
 
+  print('----------------------------------');
+
   // final --> run time constant(in case of receiving data from db or api or user input)
-  final myVar3 = 'Mo';
+  print('Final ----------------------------------');
+  final myVar3 = 'Mooo';
   print(myVar3);
   //myVar3 = 20; can't change the value
 
+  print('----------------------------------');
+
   // const --> compile time constant(better performance than final when the value is known at compile time)
-  const myVar4 = 'Mo';
+  print('Const ----------------------------------');
+  const myVar4 = 'Moooo';
   print(myVar4);
   //myVar4 = 20; can't change the value
+
+  print('----------------------------------');
 }
