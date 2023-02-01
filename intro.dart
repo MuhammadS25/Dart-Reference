@@ -180,4 +180,23 @@ void main() {
   print(myName);
 
   print('----------------------------------');
+
+  // switch case
+  print('Switch case ----------------------------------');
+  int playerNum = 5;
+  switch (playerNum) {
+    case 1:
+      print('Goalkeeper');
+      break;
+    case 7:
+      print('Siuuuu');
+      break;
+    case 10:
+      print('Leo');
+      break;
+    default:
+      print('Zizou is the best');
+  }
+
+  print('----------------------------------');
 }
