@@ -27,6 +27,7 @@ void main() {
   bool isTrue = true; //true not 1
   isTrue = pi == 3.14; // true
   isTrue = pi == 3.14 ? true : false; // ternary operator
+  print(isTrue);
 
   // lists
   List<String> names = ['Mo', 'Ahmed', 'Ali']; // fixed length
