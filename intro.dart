@@ -49,8 +49,7 @@ void main() {
   print(names.isNotEmpty); // check if the list is not empty
   names.sort(); // sort the list
   print(names);
-  names.reversed; // reverse the list
-  print(names.reversed);
+  print(names.reversed); // reverse the list
   names.forEach((name) => print(name)); // loop through the list
   names.map((name) => name.toUpperCase()).forEach(
       (name) => print(name)); // loop through the list and modify the values
@@ -64,8 +63,9 @@ void main() {
       name.startsWith('M'))); // get the first value that starts with 'M'
   print(names.lastWhere((name) =>
       name.startsWith('M'))); // get the last value that starts with 'M'
-  names.join(', '); // join the list values with a comma and space
-  print(names);
+  String joined =
+      names.join(';'); // join the list values with a semicolon to a string
+  print(joined);
   names.clear(); // remove all elements
 
   // maps
