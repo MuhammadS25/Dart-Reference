@@ -169,4 +169,15 @@ void main() {
   print(myVar is! List); // check if the variable is not a list
 
   print('----------------------------------');
+
+  // Null aware operators
+  print('Null aware operators ----------------------------------');
+  var myName = null;
+  print(myName
+      ?.length); // if the variable is null, return null, otherwise return the value
+  print(myName ?? 'Mo'); // if myName is null, print 'Mo'
+  print(myName ??= 'Not Null'); // if myName is null, assign 'Mo' to it
+  print(myName);
+
+  print('----------------------------------');
 }
