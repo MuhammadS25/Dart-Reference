@@ -162,4 +162,11 @@ void main() {
   //myVar4 = 20; can't change the value
 
   print('----------------------------------');
+
+  // Type test
+  print('Type test ----------------------------------');
+  print(myVar is List); // check if the variable is a list
+  print(myVar is! List); // check if the variable is not a list
+
+  print('----------------------------------');
 }
