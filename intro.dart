@@ -206,9 +206,23 @@ void main() {
   print('----------------------------------');
 
   reminder();
+
+  print('----------------------------------');
+
+  // optional parameters
+  print('Optional parameters ----------------------------------');
+  print(divide(x: 10, y: 2));
+  print(divide());
+
+  print('----------------------------------');
 }
 
 // functions
 void reminder() {
   print('There\'s no God but ALLAH');
+}
+
+int divide({int x = 1, int y = 1}) {
+  //optional parameters not required with null safety
+  return x ~/ y;
 }
