@@ -234,6 +234,9 @@ void main() {
   // };
   // Player player3 = Player.fromMap(playerData);
   // player3.printData();
+  print(Player.reminder);
+  Player pro = professionalPlayer('Real Madrid', 'EGY', 'MO', '25', 'CF');
+  pro.printData();
 }
 
 // functions
@@ -250,6 +253,7 @@ int divide({int x = 1, int y = 1}) {
 class Player {
   // Attributes
   final String name, number, position;
+  static final String reminder = 'There\'s no God but ALLAH';
 
   // Constructor
   // Player.ord(String name, String number, String position) {
@@ -321,4 +325,22 @@ class Player {
   //   this.number = player['number'].toString();
   //   this.position = player['position'].toString();
   // }
+}
+
+class professionalPlayer extends Player {
+  // Attributes
+  final String club, country;
+
+  // Constructor
+  professionalPlayer(
+      this.club, this.country, String name, String number, String position)
+      : super(name, number, position);
+
+  // Methods
+  @override
+  void printData() {
+    super.printData();
+    print('Club: ${this.club}');
+    print('Country: ${this.country}');
+  }
 }
