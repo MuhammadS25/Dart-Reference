@@ -222,18 +222,18 @@ void main() {
   print(player1.getName());
   print(player1.getNumber());
   print(player1.getPosition());
-  player1 = Player.fromData('Not Mo', 'Not 25', 'Not CF');
-  player1.printData();
-  player1.setData('MoSabry25', '25', 'CF');
-  Player player2 = Player.fromPlayer(player1);
-  player2.printData();
-  Map<String, String> playerData = {
-    'name': 'Muhammad Sabry',
-    'number': '25',
-    'position': 'ST'
-  };
-  Player player3 = Player.fromMap(playerData);
-  player3.printData();
+  // player1 = Player.fromData('Not Mo', 'Not 25', 'Not CF');
+  // player1.printData();
+  // player1.setData('MoSabry25', '25', 'CF');
+  // Player player2 = Player.fromPlayer(player1);
+  // player2.printData();
+  // Map<String, String> playerData = {
+  //   'name': 'Muhammad Sabry',
+  //   'number': '25',
+  //   'position': 'ST'
+  // };
+  // Player player3 = Player.fromMap(playerData);
+  // player3.printData();
 }
 
 // functions
@@ -249,14 +249,17 @@ int divide({int x = 1, int y = 1}) {
 // classes
 class Player {
   // Attributes
-  String name = 'MO', number = '07', position = 'LW';
+  final String name, number, position;
 
   // Constructor
-  Player(String name, String number, String position) {
-    this.name = name;
-    this.number = number;
-    this.position = position;
-  }
+  // Player.ord(String name, String number, String position) {
+  //   this.name = name;
+  //   this.number = number;
+  //   this.position = position;
+  // }
+
+  //special constructor
+  Player(this.name, this.number, this.position);
 
   // Methods
 
@@ -279,43 +282,43 @@ class Player {
     print('Position: ${this.position}');
   }
 
-  // Setters
-  void setName(String name) {
-    this.name = name;
-  }
+  // // Setters
+  // void setName(String name) {
+  //   this.name = name;
+  // }
 
-  void setNumber(String number) {
-    this.number = number;
-  }
+  // void setNumber(String number) {
+  //   this.number = number;
+  // }
 
-  void setPosition(String position) {
-    this.position = position;
-  }
+  // void setPosition(String position) {
+  //   this.position = position;
+  // }
 
-  void setData(String name, String number, String position) {
-    this.name = name;
-    this.number = number;
-    this.position = position;
-  }
+  // void setData(String name, String number, String position) {
+  //   this.name = name;
+  //   this.number = number;
+  //   this.position = position;
+  // }
 
-  // Named constructor
-  Player.fromData(String name, String number, String position) {
-    this.name = name;
-    this.number = number;
-    this.position = position;
-  }
+  // // Named constructor
+  // Player.fromData(String name, String number, String position) {
+  //   this.name = name;
+  //   this.number = number;
+  //   this.position = position;
+  // }
 
-  // object constructor
-  Player.fromPlayer(Player player) {
-    this.name = player.name;
-    this.number = player.number;
-    this.position = player.position;
-  }
+  // // object constructor
+  // Player.fromPlayer(Player player) {
+  //   this.name = player.name;
+  //   this.number = player.number;
+  //   this.position = player.position;
+  // }
 
-  // map constructor
-  Player.fromMap(Map<String, String> player) {
-    this.name = player['name'].toString();
-    this.number = player['number'].toString();
-    this.position = player['position'].toString();
-  }
+  // // map constructor
+  // Player.fromMap(Map<String, String> player) {
+  //   this.name = player['name'].toString();
+  //   this.number = player['number'].toString();
+  //   this.position = player['position'].toString();
+  // }
 }
